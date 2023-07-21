@@ -1,9 +1,6 @@
 # Brainfuck
 
-These files should help you get started with your brainfuck implementation.
-In specific, they take care of the fiddly bit with reading a file.
-
-There are a few files in here for you:
+There are a few files in here:
 
  - main.s:
     This file contains the main function.
@@ -14,8 +11,8 @@ There are a few files in here for you:
     This subroutine is used by the main function in main.s.
 
  - brainfuck.s:
-    This is where you should put your brainfuck implementation.
-    In it you should define a `brainfuck` subroutine that takes
+    This is where we have our brainfuck implementation.
+    We have defined a `brainfuck` subroutine that takes
     a single argument: a string holding the code to execute.
 
  - Makefile:
@@ -23,8 +20,10 @@ There are a few files in here for you:
     you can compile the code in this directory by simply running the command `make`.
 
 
-Feel free to have a look at the different files, but keep in mind that all you need to do is:
-
-  1. Edit `brainfuck.s`
-  2. Run `make`
-  3. Run `./brainfuck`
+You can add the file text with the brainfuck code and run the program using the commands:
+```
+make
+```
+```
+./brainfuck file.txt
+```
